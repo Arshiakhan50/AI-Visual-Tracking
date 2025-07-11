@@ -2,21 +2,6 @@
 
 This repository is an extensive open-source project showcasing the seamless integration of **object detection and tracking** using **YOLOv8** (object detection algorithm), along with **Streamlit** (a popular Python web application framework for creating interactive web apps). The project offers a user-friendly and customizable interface designed to detect and track objects in real-time video streams from sources such as RTSP, UDP, and YouTube URLs, as well as static videos and images.
 
-
-## <span style="color:deepskyblue">Explore Implementation Details on Medium (3 parts blog series) </span>
-For a deeper dive into the implementation, check out my three-part blog series on [Medium](https://medium.com/@mycodingmantras), where I detail the [step-by-step process of creating this web application](https://medium.com/@mycodingmantras/building-a-real-time-object-detection-and-tracking-app-with-yolov8-and-streamlit-part-1-30c56f5eb956).
-
-
-## <span style="color:deepskyblue">WebApp Demo on Streamlit Server</span>
-
-Thank you team [Streamlit](<https://github.com/streamlit/streamlit>) for the community support for the cloud upload. 
-
-This app is up and running on Streamlit cloud server!!! You can check the demo of this web application on this link 
-[yolov8-streamlit-detection-tracking-webapp](https://yolov8-object-detection-and-tracking-app.streamlit.app/)
-
-**Note**: In the demo, Due to non-availability of GPUs, you may encounter slow video inferencing.
-
-
 ## <span style="color:deepskyblue"> Tracking With Object Detection Demo</span>
 
 <https://user-images.githubusercontent.com/104087274/234874398-75248e8c-6965-4c91-9176-622509f0ad86.mov>
@@ -30,15 +15,15 @@ This app is up and running on Streamlit cloud server!!! You can check the demo o
 
 ### Home page
 
-<img src="https://github.com/Arshiakhan50/AI-Visual-Tracking/tree/main/assets/pic2.png" >
+<img src="./assets/pic2.png" >
 
 ### Page after uploading an image and object detection
 
-<img src="https://github.com/Arshiakhan50/AI-Visual-Tracking/tree/main/assets/pic3.png" >
+<img src="./assets/pic3.png" >
 
 ### Segmentation task on image
 
-<img src="https://github.com/Arshiakhan50/AI-Visual-Tracking/tree/main/assets/segmentation.png" >
+<img src="./assets/segmentation.png" >
 
 ## Requirements
 
