@@ -42,7 +42,7 @@ This app is up and running on Streamlit cloud server!!! You can check the demo o
 
 ## Requirements
 
-Python 3.6+
+Python 3.11
 YOLOv8
 Streamlit
 
@@ -78,36 +78,6 @@ One the model config is done, select a source.
 - Click the "Detect Objects" button to run the object detection algorithm on the uploaded image with the selected confidence threshold.
 - The resulting image with objects detected will be displayed on the page. Click the "Download Image" button to download the image.("If save image to download" is selected)
 
-## Detection in Videos
-
-- Create a folder with name `videos` in the same directory
-- Dump your videos in this folder
-- In `settings.py` edit the following lines.
-
-```python
-# video
-VIDEO_DIR = ROOT / 'videos' # After creating the videos folder
-
-# Suppose you have four videos inside videos folder
-# Edit the name of video_1, 2, 3, 4 (with the names of your video files) 
-VIDEO_1_PATH = VIDEO_DIR / 'video_1.mp4' 
-VIDEO_2_PATH = VIDEO_DIR / 'video_2.mp4'
-VIDEO_3_PATH = VIDEO_DIR / 'video_3.mp4'
-VIDEO_4_PATH = VIDEO_DIR / 'video_4.mp4'
-
-# Edit the same names here also.
-VIDEOS_DICT = {
-    'video_1': VIDEO_1_PATH,
-    'video_2': VIDEO_2_PATH,
-    'video_3': VIDEO_3_PATH,
-    'video_4': VIDEO_4_PATH,
-}
-
-# Your videos will start appearing inside streamlit webapp 'Choose a video'.
-```
-
-- Click on `Detect Video Objects` button and the selected task (detection/segmentation) will start on the selected video.
-
 ### Detection on RTSP
 
 - Select the RTSP stream button
@@ -120,22 +90,5 @@ VIDEOS_DICT = {
 - The detection/segmentation task will start on the YouTube video url
 
 <https://user-images.githubusercontent.com/104087274/226178296-684ad72a-fe5f-4589-b668-95c835cd8d8a.mov>
-
-## Acknowledgements
-
-This app uses [YOLOv8](<https://github.com/ultralytics/ultralytics>) for object detection algorithm and [Streamlit](<https://github.com/streamlit/streamlit>) library for the user interface.
-
-### Disclaimer
-
-This project is intended as a learning exercise and demonstration of integrating various technologies, including:
-
-- Streamlit
-- YoloV8
-- Object-Detection on Images And Live Video Streams
-- Python-OpenCV
-
-Please note that this application is not designed or tested for production use. It serves as an educational resource and a showcase of technology integration rather than a production-ready web application.
-
-Contributors and users are welcome to explore, learn from, and build upon this project for educational purposes.
 
 ### Hit star ⭐ if you like this repo!!!
