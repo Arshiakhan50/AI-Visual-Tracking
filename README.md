@@ -30,15 +30,15 @@ This app is up and running on Streamlit cloud server!!! You can check the demo o
 
 ### Home page
 
-<img src="https://github.com/CodingMantras/yolov8-streamlit-detection-tracking/blob/master/assets/pic1.png" >
+<img src="https://github.com/Arshiakhan50/AI-Visual-Tracking/tree/main/assets/pic2.png" >
 
 ### Page after uploading an image and object detection
 
-<img src="https://github.com/CodingMantras/yolov8-streamlit-detection-tracking/blob/master/assets/pic3.png" >
+<img src="https://github.com/Arshiakhan50/AI-Visual-Tracking/tree/main/assets/pic3.png" >
 
 ### Segmentation task on image
 
-<img src="https://github.com/CodingMantras/yolov8-streamlit-detection-tracking/blob/master/assets/segmentation.png" >
+<img src="https://github.com/Arshiakhan50/AI-Visual-Tracking/tree/main/assets/segmentation.png" >
 
 ## Requirements
 
@@ -52,7 +52,7 @@ pip install ultralytics streamlit pytube
 
 ## Installation
 
-- Clone the repository: git clone <https://github.com/CodingMantras/yolov8-streamlit-detection-tracking.git>
+- Clone the repository: git clone <https://github.com/Arshiakhan50/AI-Visual-Tracking.git>
 - Change to the repository directory: `cd yolov8-streamlit-detection-tracking`
 - Create `weights`, `videos`, and `images` directories inside the project.
 - Download the pre-trained YOLOv8 weights from (<https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt>) and save them to the `weights` directory in the same project.
