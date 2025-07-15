@@ -4,6 +4,7 @@ import cv2
 import yt_dlp
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
 import settings
 
 class CustomConvBlock(nn.Module):
@@ -14,15 +15,18 @@ class CustomConvBlock(nn.Module):
     def forward(self, x):
         return self.conv(x)
     
-class FeaturePyramid(nn.Module):
-    def __init__(self, backbone):
-        super().__init__()
-        self.backbone = backbone  
-        self.fpn = nn.ModuleList([CustomConvBlock() for _ in range(4)])
+class FeaturePyramid(nn.Module):  
+    def __init__(self, backbone):  
+        super().__init__()  
+        self.backbone = backbone 
+        self.fpn = nn.ModuleList([CustomConvBlock() for _ in range(4)])  
+        self.weights = nn.Parameter(torch.ones(4))  
 
-    def forward(self, x):
-        features = self.backbone(x) 
-        return [fpn_layer(feat) for fpn_layer, feat in zip(self.fpn, features)]
+    def forward(self, x):  
+        features = self.backbone(x)  
+        return sum(w * fpn(feat) for w, fpn, feat in zip(  
+            F.softmax(self.weights, dim=0), self.fpn, features  
+        ))
     
 def load_model(model_path):
     """
