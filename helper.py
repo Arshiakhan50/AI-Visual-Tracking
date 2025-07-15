@@ -2,9 +2,28 @@ from ultralytics import YOLO
 import streamlit as st
 import cv2
 import yt_dlp
+import torch
+import torch.nn as nn
 import settings
 
+class CustomConvBlock(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.conv = nn.Conv2d(256, 256, kernel_size=3, padding=1)  
 
+    def forward(self, x):
+        return self.conv(x)
+    
+class FeaturePyramid(nn.Module):
+    def __init__(self, backbone):
+        super().__init__()
+        self.backbone = backbone  
+        self.fpn = nn.ModuleList([CustomConvBlock() for _ in range(4)])
+
+    def forward(self, x):
+        features = self.backbone(x) 
+        return [fpn_layer(feat) for fpn_layer, feat in zip(self.fpn, features)]
+    
 def load_model(model_path):
     """
     Loads a YOLO object detection model from the specified model_path.
