@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  ai-tracker:
+    build: .
+    ports:
+      - "8501:8501"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    volumes:
+      - ./weights:/app/weights
+      - ./videos:/app/videos
+    environment:
+      - DISPLAY=$DISPLAY
