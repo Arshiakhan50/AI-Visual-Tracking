@@ -1,15 +1,10 @@
-# <span style="color:deepskyblue"> Real-time Object Detection and Tracking with YOLOv8 & Streamlit </span>
+# <span style="color:deepskyblue"> Real-time Object Detection and Tracking with Streamlit </span>
 
-This repository is an open-source project that combines object detection and tracking using YOLOv8 for detection and Streamlit for building the web interface. It provides a customizable and easy-to-use tool for detecting and tracking objects in real-time video streams, including RTSP, UDP, and YouTube feeds, as well as pre-recorded videos and images.
+This repository combined object detection and tracking using YOLOv8 for detection and Streamlit for building the web interface. It provides a customizable and easy-to-use tool for detecting and tracking objects in real-time video streams, and YouTube feeds, as well as pre-recorded videos and images.
 
 ## <span style="color:deepskyblue"> Tracking With Object Detection Demo</span>
 
 <https://user-images.githubusercontent.com/104087274/234874398-75248e8c-6965-4c91-9176-622509f0ad86.mov>
-
-## Overview
-
-<https://github.com/user-attachments/assets/85df351a-371c-47e0-91a0-a816cf468d19.mov>
-
 
 ## Demo Pics
 
@@ -72,7 +67,5 @@ One the model config is done, select a source.
 - Select the source as YouTube
 - Copy paste the url inside the text box.
 - The detection/segmentation task will start on the YouTube video url
-
-<https://user-images.githubusercontent.com/104087274/226178296-684ad72a-fe5f-4589-b668-95c835cd8d8a.mov>
 
 ### Hit star ⭐ if you like this repo!!!
