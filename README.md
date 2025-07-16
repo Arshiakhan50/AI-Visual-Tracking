@@ -1,6 +1,6 @@
 # <span style="color:deepskyblue"> Real-time AI Visual Tracking with Streamlit </span>
 
-This repository combined object detection and tracking using YOLOv8 for detection and Streamlit for building the web interface. It provides a customizable and easy-to-use tool for detecting and tracking objects in real-time video streams, and YouTube feeds, as well as pre-recorded videos and images.
+This repository combines object detection and tracking using YOLOv8 for detection and Streamlit for building the web interface. It provides a customizable and easy-to-use tool for detecting and tracking objects in real-time video streams, and YouTube feeds, as well as pre-recorded videos and images.
 
 ## <span style="color:deepskyblue"> Tracking With Object Detection Demo</span>
 
